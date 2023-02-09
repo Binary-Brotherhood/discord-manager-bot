@@ -8,7 +8,7 @@ import net.dv8tion.jda.api.entities.Activity;
 import net.dv8tion.jda.api.utils.cache.CacheFlag;
 public class App {
     public static void main(String[] args) {
-        JDABuilder builder = JDABuilder.createDefault("MTA3Mjc3MTgxNzk2NzcyNjY3Ng.G0ZuUu.sAmL7ieCdE1mMZFai3Fmtv4NpV6n6DPlzH2XVg");
+        JDABuilder builder = JDABuilder.createDefault(Constants.BotToken);
         
         // Disable parts of the cache
         builder.disableCache(CacheFlag.MEMBER_OVERRIDES, CacheFlag.VOICE_STATE);
